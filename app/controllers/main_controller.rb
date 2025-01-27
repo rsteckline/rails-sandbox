@@ -1,6 +1,6 @@
 class MainController < ApplicationController
     def index
-        flash[:notice] = "You have arrived"
-        flash[:alert] = "You have not arrived"
+        flash.now[:notice] = "You have arrived"
+        flash.now[:alert] = "You have not arrived"
     end
 end
